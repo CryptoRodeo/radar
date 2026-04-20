@@ -4,6 +4,7 @@ ring:       assess
 segment:    techniques
 tags:       [workflow, prompting]
 featured:   true
+internal:   true
 ---
 
 # Ralph Wiggum
