@@ -43,7 +43,6 @@ build/
 # Node.js
 node_modules/
 .techradar/
-package-lock.json
 
 # Git worktrees
 .worktrees/
