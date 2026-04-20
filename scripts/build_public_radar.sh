@@ -52,7 +52,7 @@ echo ""
 node -e "
 const fs = require('fs');
 const config = JSON.parse(fs.readFileSync('$CONFIG_FILE', 'utf8'));
-config.basePath = '/';
+config.basePath = '/radar';
 fs.writeFileSync('$CONFIG_FILE', JSON.stringify(config, null, 2) + '\n');
 "
 
