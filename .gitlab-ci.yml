@@ -1,0 +1,46 @@
+stages:
+  - validate
+  - deploy
+
+default:
+  tags: [itup-alm-x86]
+
+# Validate Markdown radar entries before merging
+validate:
+  stage: validate
+  image: registry.access.redhat.com/ubi10/ubi:latest
+  before_script:
+    - dnf -y install python3-pip make
+    - pip3 install --break-system-packages -r requirements.txt
+  script:
+    - make validate
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+# Build AOEpeople techradar and deploy to GitLab Pages
+pages:
+  stage: deploy
+  image: registry.access.redhat.com/ubi10/nodejs-22:latest
+  timeout: 10m
+  variables:
+    NODE_OPTIONS: "--max-old-space-size=768"
+    NEXT_TELEMETRY_DISABLED: "1"
+    npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  script:
+    - bash scripts/build_radar_app.sh
+  artifacts:
+    paths:
+      - public
+  cache:
+    key:
+      files:
+        - package.json
+        - package-lock.json
+    paths:
+      - node_modules/
+      - .techradar/node_modules/
+      - .techradar/hash
+      - .npm/
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

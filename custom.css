@@ -1,0 +1,177 @@
+/* Red Hat Branding Customization for Technology Radar */
+/* Adapted for the AOEpeople techradar framework */
+/* Uses [class^=...] selectors for CSS module compatibility */
+
+/* Import Red Hat fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&family=Red+Hat+Text:wght@400;500;700&display=swap');
+
+/* ============================================================
+   Typography - Red Hat fonts
+   ============================================================ */
+body {
+  font-family: 'Red Hat Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+/* ============================================================
+   Header / Logo area - Red Hat branding via border accent
+   ============================================================ */
+[class^="Layout_header"] {
+  border-bottom: 3px solid #CC0000;
+}
+
+/* Logo subline always visible for branding */
+[class^="Logo_subline"] {
+  display: block;
+  opacity: 0.8;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Radar Logo SVG  */
+[class^="Logo_src"] {
+  max-width: 4rem;
+}
+
+/* ============================================================
+   Footer - Red Hat branded footer
+   ============================================================ */
+[class^="Footer_footer"] {
+  border-top: 3px solid #CC0000;
+}
+
+[class^="Footer_description"] {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+[class^="Footer_footerLink"] {
+  color: #CC0000;
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 500;
+}
+
+[class^="Footer_footerLink"]:hover {
+  color: #A00000;
+}
+
+/* ============================================================
+   Links - Red Hat accent color
+   ============================================================ */
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #A00000;
+}
+
+/* ============================================================
+   Navigation highlight icons
+   ============================================================ */
+[class^="Navigation_icon"] {
+  fill: #CC0000;
+}
+
+/* ============================================================
+   Badge / Ring colors - keep default ring colors but style badges
+   ============================================================ */
+[class^="Badge_badge"] {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+/* ============================================================
+   Item detail pages - typography and spacing
+   ============================================================ */
+[class^="ItemDetail_content"] {
+  color: #333333 !important;
+}
+
+/* Keep hint/warning text light on dark background */
+[class^="ItemDetail_revision"][class*="hint"] [class^="ItemDetail_content"] {
+  color: var(--foreground) !important;
+}
+
+[class^="ItemDetail_body"] p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+[class^="ItemDetail_body"] p:last-child {
+  margin-bottom: 0;
+}
+
+[class^="ItemDetail_body"] h1,
+[class^="ItemDetail_body"] h2,
+[class^="ItemDetail_body"] h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+[class^="ItemDetail_body"] h1:first-child,
+[class^="ItemDetail_body"] h2:first-child,
+[class^="ItemDetail_body"] h3:first-child {
+  margin-top: 0;
+}
+
+[class^="ItemDetail_body"] ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+[class^="ItemDetail_body"] ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+[class^="ItemDetail_body"] li {
+  margin-bottom: 0.5em;
+}
+
+[class^="ItemDetail_body"] li:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   Segment list items - typography
+   ============================================================ */
+[class^="SegmentList_"] {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+[class^="SegmentLink_title"] {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* ============================================================
+   Filter / Tags - branding
+   ============================================================ */
+[class^="Filter_"] {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+/* ============================================================
+   Search input
+   ============================================================ */
+input {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+/* ============================================================
+   Ring list styling
+   ============================================================ */
+[class^="RingList_title"] {
+  font-family: 'Red Hat Display', sans-serif;
+}

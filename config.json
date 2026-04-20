@@ -1,0 +1,139 @@
+{
+  "basePath": "/ai/radar",
+  "baseUrl": "",
+  "editUrl": "",
+  "logoFile": "/logo.svg",
+  "toggles": {
+    "showChart": true,
+    "showTagFilter": true,
+    "showSegmentList": true,
+    "showEmptyRings": false
+  },
+  "sections": ["radar", "tags", "list"],
+  "colors": {
+    "foreground": "#fff",
+    "background": "#1a1a1a",
+    "highlight": "#CC0000",
+    "content": "#fff",
+    "text": "#d0d0d0",
+    "link": "#CC0000",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "tag": "rgba(255, 255, 255, 0.1)"
+  },
+  "segments": [
+    {
+      "id": "techniques",
+      "title": "Techniques",
+      "description": "Techniques and methods for software development, testing, and delivery.",
+      "label": "Quadrant 1",
+      "color": "#84BFA4"
+    },
+    {
+      "id": "platforms",
+      "title": "Platforms",
+      "description": "Platforms and infrastructure for running and deploying software.",
+      "label": "Quadrant 2",
+      "color": "#248EA6"
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "description": "Software tools that support development, testing, and operations.",
+      "label": "Quadrant 3",
+      "color": "#F2A25C"
+    },
+    {
+      "id": "tips",
+      "title": "Tips",
+      "description": "Practical tips, best practices, and recommendations.",
+      "label": "Quadrant 4",
+      "color": "#F25244"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "title": "Adopt",
+      "description": "Technologies and practices we recommend for broad adoption. These have been proven in production and provide clear value.",
+      "color": "#5cb449",
+      "radius": 0.5,
+      "strokeWidth": 5
+    },
+    {
+      "id": "trial",
+      "title": "Trial",
+      "description": "Technologies worth pursuing. We have seen them work successfully and recommend teams to trial them in appropriate projects.",
+      "color": "#faa03d",
+      "radius": 0.69,
+      "strokeWidth": 3
+    },
+    {
+      "id": "assess",
+      "title": "Assess",
+      "description": "Technologies worth exploring. We find them promising and recommend looking at them when facing a specific need.",
+      "color": "#029df7",
+      "radius": 0.85,
+      "strokeWidth": 2
+    },
+    {
+      "id": "hold",
+      "title": "Hold",
+      "description": "Technologies we recommend against using for new projects. Existing usage may continue but consider alternatives for new work.",
+      "color": "#688190",
+      "radius": 1,
+      "strokeWidth": 0.75
+    }
+  ],
+  "flags": {
+    "new": {
+      "color": "#f1235a",
+      "title": "New",
+      "titleShort": "N",
+      "description": "New in this version"
+    },
+    "changed": {
+      "color": "#40a7d1",
+      "title": "Changed",
+      "titleShort": "C",
+      "description": "Recently changed"
+    },
+    "default": {
+      "description": "Unchanged"
+    }
+  },
+  "chart": {
+    "size": 800,
+    "blipSize": 12
+  },
+  "social": [
+    {
+      "href": "https://gitlab.cee.redhat.com/pnd/ai/radar",
+      "icon": "gitlab"
+    }
+  ],
+  "footerLinks": [
+    {
+      "label": "Repository",
+      "url": "https://gitlab.cee.redhat.com/pnd/ai/radar"
+    },
+    {
+      "label": "Contributing Guide",
+      "url": "https://gitlab.cee.redhat.com/pnd/ai/radar/-/blob/main/CONTRIBUTING.md"
+    }
+  ],
+  "labels": {
+    "title": "AI Technology Radar",
+    "quadrant": "Quadrant",
+    "quadrantOverview": "Quadrant Overview",
+    "zoomIn": "Zoom in",
+    "filterByTag": "Filter by Tag",
+    "footer": "Maintained by Portfolio & Delivery at Red Hat. Visualization powered by AOE Technology Radar (open source).",
+    "notUpdated": "",
+    "notFound": "404 - Page not found",
+    "pageAbout": "About the Technology Radar",
+    "pageOverview": "Technologies Overview",
+    "pageSearch": "Search",
+    "searchPlaceholder": "What are you looking for?",
+    "metaDescription": "AI Technology Radar - Portfolio & Delivery at Red Hat. Tracking technology choices across Techniques, Platforms, Tools, and Tips."
+  }
+}

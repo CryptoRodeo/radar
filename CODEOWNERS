@@ -1,0 +1,26 @@
+# CODEOWNERS for Portfolio & Delivery AI Technology Radar
+#
+# This file defines who can approve changes to different parts of the radar.
+# Teams own their own directories and can approve changes to their blips.
+#
+# Documentation: https://docs.gitlab.com/ee/user/project/codeowners/
+
+# Default owners for the entire repository
+* @pnd/ai/radar-maintainers
+
+# Core repository files - require approval from maintainers
+/README.md @pnd/ai/radar-maintainers
+/.gitlab-ci.yml @pnd/ai/radar-maintainers
+/scripts/ @pnd/ai/radar-maintainers
+/CODEOWNERS @pnd/ai/radar-maintainers
+
+# Radar entries
+# Teams can own specific entries by file path
+
+# Example entries
+/radar/platforms/kubernetes.md @your-user-name @another-username
+/radar/tools/gitlab-ci.md @whatever
+/radar/tips/python.md @also-here
+
+# Add your team's ownership here:
+# /radar/<quadrant>/<entry-name>.md @your-team-lead @team-member1 @team-member2
